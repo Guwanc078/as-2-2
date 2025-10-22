@@ -1,0 +1,79 @@
+.bg-image {
+    background-image: url("../img/home-bg.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+a.hover-1 {
+    position: relative;
+    color: white!important;
+}
+
+a.hover-1:hover {
+    color: orange!important;
+}
+.card-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.social {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    color: var(--contrast-color);
+    line-height: 1;
+    margin: 0 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+
+
+a.hover-1:hover::before {
+    content: '';
+    position: absolute;
+    animation: hover-1 5s infinite;
+    top: 35px;
+    width: 106px;
+    height: 2px;
+    background-color: orange!important;
+    transition: .5s all;
+}
+
+@keyframes hover-1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 106px;
+        height: 2px;
+    }
+    75% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+
+}
