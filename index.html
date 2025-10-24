@@ -23,10 +23,10 @@
 
                 </div>
                 <div class="col-7 display-3 py-5 text-center">
-                    <div class="bg-white py-5">
+                    <div class="bg-white mb-4">
                         DESIGN AGENCY
                     </div>
-                    <div class="text-warning py-5">
+                    <div class="text-warning  bg-white">
                         COMING SOON TEMPLATE
                     </div>
                 </div>
@@ -87,31 +87,29 @@
                         SECONDS
                     </div>
                 </div>
-                <div class="py-3"></div>
+                <div class="py-5"></div>
             </div>
         </div>
     </div>
-    <div class="container-xl">
+    <div class="container-xl my-5">
         <div class="row">
-            <div class="col-6 " style="background-color: #FB9526;">
-                <div class="col-6 ">
-                    <div class="text-center display-4 py-5">
-                        WEB DESIGN
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, cumque rem. Libero
-                        incidunt
-                        hic ipsa animi temporibus, laborum fugiat sapiente id numquam, nihil eligendi praesentium
-                        corporis
-                        molestiae eveniet accusantium aspernatur officia unde delectus quibusdam. Cum sequi alias sit
-                        quae,
-                        praesentium itaque dolore, ullam recusandae rem quaerat veritatis. Quaerat, unde harum.
-                    </div>
-                    <div class="py-5"></div>
+            <div class="col-5 mx-2 " style="background-color: #FB9526;">
+                <div class=" display-4 py-5 px-5 ">
+                    WEB DESIGN
                 </div>
+                <div class="px-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, cumque rem. Libero
+                    incidunt
+                    hic ipsa animi temporibus, laborum fugiat sapiente id numquam, nihil eligendi praesentium
+                    corporis
+                    molestiae eveniet accusantium aspernatur officia unde delectus quibusdam. Cum sequi alias sit
+                    quae,
+                    praesentium itaque dolore, ullam recusandae rem quaerat veritatis. Quaerat, unde harum.
+                </div>
+                <div class="py-5"></div>
             </div>
-            <div class="col-6">
-                <img src="img/about-img.png" alt="" style="padding-left: 200px;">
+            <div class="col-5">
+                <img src="img/about-img.png" alt="" style="padding-left: 100px;">
             </div>
             <div class="py-4"></div>
         </div>
@@ -272,36 +270,40 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="px-5 py-4">
+        Copyright &copy; 2018 Company Name
+    </div>
 
 
-        <script src="js/aos.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/splide.min.js"></script>
-        <script src="js/fancybox.umd.js"></script>
-        <script>
-            Fancybox.bind("[data-fancybox]", {
-                animated: true,
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            animated: true,
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide', {
+                type: "loop",
+                autoplay: 1,
+                arrows: 0,
+                interval: 3e3,
+                pauseOnHover: 0,
+                perMove: 1,
+                perPage: 3,
+                gap: "1.5rem",
             });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var splide = new Splide('.splide', {
-                    type: "loop",
-                    autoplay: 1,
-                    arrows: 0,
-                    interval: 3e3,
-                    pauseOnHover: 0,
-                    perMove: 1,
-                    perPage: 3,
-                    gap: "1.5rem",
-                });
 
-                splide.mount();
-            });
-            AOS.init({
-                once: true,
-            });
-        </script>
+            splide.mount();
+        });
+        AOS.init({
+            once: true,
+        });
+    </script>
 
 </body>
 
